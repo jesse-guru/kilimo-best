@@ -1,0 +1,251 @@
+*{
+    margin:0px;
+    padding:0px;
+
+}
+.container {
+  width: 100%;
+  padding: 2%;
+}
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+  }
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--dark-color);
+    margin: 3px 0;
+    border-radius: 3px;
+    transition: var(--transition);
+}
+
+.top{
+    background-color: black;
+    color:white;
+    padding:10px;
+    display:flex;
+    justify-content:flex-end;
+    
+}
+.email{
+    display: flex;
+
+}
+.email p{
+    padding-left:10px;
+}
+.phone{
+    display:flex;
+    padding-left:20px;
+}
+.phone p{
+    padding-left:10px;
+}
+.navigation{
+    background-color: rgb(18, 167, 55);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#nav{
+    align-content: center;
+    padding-left:300px;
+}
+#nav a{
+    align-items: center;
+    justify-content: space-between;
+    color:black;
+    padding-left:50px;
+    padding-right: 20px;
+    text-decoration: none;
+}
+#nav a:hover{
+    color:white;
+    text-decoration: none;
+}
+.home{
+    background-image: url("images/tractor.jpeg");
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height:540px;
+    
+}
+.text-box{
+    padding-top:250px;
+    color:white;
+    font-size: 26px;
+    margin-left:50px;
+}
+.button{
+    border:solid;
+    color: white;
+    border-radius: 15px;
+    padding:10px;
+    border-width: 2px;
+    border-color: #05fc05;
+    border-right: 0px;
+    margin-right:1100px;
+    margin-left: 120px;
+    margin-top:40px;
+    
+    
+}
+
+.button a{
+    color:white;
+    font-weight: 100;
+    text-decoration: none;
+}
+.button a:hover{
+    color:rgb(30, 255, 0);
+    text-decoration: none;
+}
+.about{
+    padding-top:20px;
+    align-items: center;
+    
+    
+}
+
+.about h1{
+    align-content: center;
+    padding-left:500px;
+    padding-top:50px;
+
+}
+.about-container{
+    display: flex;
+    gap:100px;
+    align-content: center;
+
+
+}
+.about-container p{
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.image-container img{
+    width:350px;
+    height:450px;
+    padding-right: 70px;
+    
+}
+.grid-container{
+    padding-top:50px;
+    align-content: center;
+    padding-left:20px;
+    
+}
+.grid-container h3{
+    margin:auto;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.services{
+    display:flex;
+    gap:20px;
+    padding-bottom: 30px;
+}
+.services img{
+    width:300px;
+    height:350px;
+   
+    border-radius: 15px;
+}
+.services p{
+    padding:10px;
+}
+.services h3{
+    padding:10px;
+}
+.grid-1{
+    border:1px solid rgb(63, 56, 56);
+    border-radius: 15px;
+    width:300px;
+  
+    
+    
+}
+.grid-2{
+    border:1px solid rgb(63, 56, 56);
+    border-radius: 15px;
+    width:300px;
+   
+    
+    
+}
+.grid-3{
+    border:1px solid rgb(63, 56, 56);
+    border-radius: 15px;
+    width:300px;
+   
+    
+}
+.grid-4{
+    border:1px solid rgb(63, 56, 56);
+    border-radius: 15px;
+    width:300px;
+    
+    
+    
+}
+.services button{
+    background-color: #05fc05;
+    color:white;
+    padding:10px;
+    border-radius: 15px;
+    border-color:transparent;
+    margin: 20px;
+}
+.services button:hover{
+    background-color: rgba(54, 255, 4, 0.226);
+}
+footer{
+    display: flex;
+    background-color: rgb(221, 212, 212);
+    padding:30px;
+    justify-content: space-between;
+}
+.contact h2{
+    text-align: center;
+    margin:auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.info{
+    display:flex;
+}
+#text-area{
+    padding-left: 250px;
+    size: 40px;
+    display:inline-block;
+    
+    
+}
+.comments{
+    padding-right:140px;
+   
+}
+.comments button{
+    padding:15px;
+    margin:10px;
+    background-color: blue;
+    border-color: transparent;
+    border-radius: 15px;
+    color:white;
+}
+.location{
+    display:block;
+    padding-left:50px;
+}
