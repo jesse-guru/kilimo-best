@@ -67,7 +67,7 @@
     text-decoration: none;
 }
 .home{
-    background-image: url("images/tractor.jpeg");
+    background-image: url("tractor.jpeg");
     background-attachment:fixed;
     background-repeat: no-repeat;
     background-size:cover;
