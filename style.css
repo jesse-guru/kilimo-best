@@ -7,18 +7,13 @@
   width: 100%;
   padding: 2%;
 }
-@media (max-width: 768px) {
-  .nav-menu {
-    flex-direction: column;
-  }
+@media screen and (max-width: 767px) and (orientation: landscape) {
+    #header.header-wrapper {
+		height: auto;
+		min-height: 100vh;
+		padding: 0px; 
+	} 
 }
-
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
 .hamburger span {
     width: 25px;
     height: 3px;
@@ -72,7 +67,7 @@
     text-decoration: none;
 }
 .home{
-    background-image: url("https://i.pinimg.com/736x/76/ba/9d/76ba9d7f368379e839faa110653a0c2c.jpg");
+    background-image: url("images/tractor.jpeg");
     background-attachment:fixed;
     background-repeat: no-repeat;
     background-size:cover;
@@ -85,20 +80,20 @@
     font-size: 26px;
     margin-left:50px;
 }
-.button{
-    border:solid;
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: fit-content;
+     border:solid;
     color: white;
     border-radius: 15px;
-    padding:10px;
+     border-color: #05fc05;
+      padding:10px;
     border-width: 2px;
-    border-color: #05fc05;
-    border-right: 0px;
-    margin-right:1100px;
-    margin-left: 120px;
-    margin-top:40px;
-    
-    
 }
+
 
 .button a{
     color:white;
@@ -152,17 +147,16 @@
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.services{
-    display:flex;
-    gap:20px;
-    padding-bottom: 30px;
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
 }
-.services img{
-    width:300px;
-    height:350px;
-   
-    border-radius: 15px;
+.services img {
+    width: 100%;
+    height: auto;
 }
+
 .services p{
     padding:10px;
 }
@@ -248,4 +242,185 @@ footer{
 .location{
     display:block;
     padding-left:50px;
+}
+@media (max-width: 767px){
+	#header .slogan {
+		font-size: 2.8em; 
+	} 
+
+	#header .secondary-slogan {
+		font-size: 1.2em;
+	}
+
+	#header .bottom {
+		bottom: 13%;
+	}
+
+	.blog-post {
+		margin-bottom: 40px;
+	}
+
+	.recent-work {
+		background-position: center;
+	}
+
+	.recent-work:before {
+		opacity: 1;
+	}
+
+	.recent-work span {
+		opacity: 1;
+	}
+}
+
+@media (max-width: 480px) {
+	#drawer-right {
+		padding: 10px 20px;
+	}
+
+	#drawer-right .nav-pills>li>a {
+		font-size: 17px;
+	}
+
+	.nav-stacked>li+li {
+		margin-top: 0;
+	}
+
+	.nav>li>a {
+		padding: 8px 15px;
+	}
+
+	#drawer-right .social {
+		margin-top: 5px;
+	}
+
+	#header {
+		background-size: cover;
+	}
+}
+
+@media screen and (max-width: 768px) {
+    .top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #nav {
+        display: none;
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+        background-color: #12a737;
+    }
+
+    .navigation.active #nav {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about h1 {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .grid-1, .grid-2, .grid-3, .grid-4 {
+        width: 100%;
+    }
+
+    .info {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    #text-area, .comments {
+        padding: 10px 0;
+    }
+
+    .comments textarea, #text-area textarea {
+        width: 100% !important;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hamburger span {
+    background: black;
+    height: 3px;
+    width: 25px;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+    #nav {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+        background-color: #12a737;
+    }
+
+    #nav.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-container,
+    .info,
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-1, .grid-2, .grid-3, .grid-4 {
+        width: 100%;
+        max-width: 90%;
+        margin: auto;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    #text-area,
+    .comments {
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    iframe {
+        width: 100% !important;
+        height: auto;
+    }
 }
